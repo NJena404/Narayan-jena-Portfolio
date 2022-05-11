@@ -109,7 +109,7 @@
 getDetails();
 function getDetails() {
     $.getJSON("https://ipapi.co/json/", function(ip) {
-      $("#ip-address").html("Your IP is: " + ip.ip + " by " + ip.org + '.');
+     <!-- $("#ip-address").html("Your IP is: " + ip.ip + " by " + ip.org + '.'); -->
       $("#location-data").html("You are located at " + ip.city + ", " + ip.country_name + '.');
     });
 
